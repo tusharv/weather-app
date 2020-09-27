@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/images/weather-ico.png" type="image/x-icon">
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+
+        <form action="">
+            <input type="text" placeholder="Enter location" required autofocus>
+            <button>Get Weather</button>
+        </form>
+
+        <div class="weatherInfo">
+            <p class="status">Enter location and click Get Weather</p>
+            <img src="">
+            <p class="title"></p>
+            <p><span class="temp"></span>, <span class="feelslike"></span></p>
+            <p class="desc"></p>
+        </div>
+    </div>
+    {{>footer}}
+    <script src="/js/app.js"></script>
+</body>
+</html>

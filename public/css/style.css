@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+h1 {
+    font-size: 44px;
+    margin-bottom: 16px;
+}
+
+.masthead {
+    margin: 10px 0px;
+    height: 300px;
+    background-image: url('../images/weather-large.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+header {
+    margin: 16px 0 48px;
+}
+
+header a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+}
+
+input {
+    font-family: inherit;
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: 1px solid #888888;
+    background-color: #888888;
+    color: #ffffff;
+    padding: 8px;
+}
+
+.weatherInfo {
+    margin: 10px 0px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #eeeeee;
+}
+
+.weatherInfo .status:empty {
+    display: none;
+}
+
+.weatherInfo img {
+    display: inline-block;
+    border-radius: 50%;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.weatherInfo .title {
+    font-weight: bolder;
+}
+
+.weatherInfo .temp::before {
+    content: 'Temprature ';
+}
+
+.weatherInfo .feelslike::before {
+    content: 'Feels Like ';
+}
+
+.weatherInfo .temp:empty::before {
+    display: none;
+}
+
+.weatherInfo .feelslike:empty::before {
+    display: none;
+}
